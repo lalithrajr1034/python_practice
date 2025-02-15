@@ -19,3 +19,14 @@ opera1=float(input("Enter first floting number:"))
 opera2=float(input("Enter second floting number:"))
 avg=(opera2+opera1)/2
 print(avg)
+
+# print true if a>=b else print false
+a=int(input("Enter first number:"))
+b=int(input("Enter second number:"))
+print("True") if a>=b else print("False")
+
+#            (or)
+
+a=int(input("Enter first number:"))
+b=int(input("Enter second number:"))
+print(a>=b)
