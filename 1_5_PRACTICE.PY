@@ -30,3 +30,13 @@ print("True") if a>=b else print("False")
 a=int(input("Enter first number:"))
 b=int(input("Enter second number:"))
 print(a>=b)
+
+
+
+inpu=int(input())
+i=1
+while inpu >=i:
+    st=str(i)
+    print(st)
+    i+=1
+    print(len(st))
