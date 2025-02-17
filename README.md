@@ -5,11 +5,11 @@ this is for practice purpse
 </br>
 LOOPS</br></br>
 -->WHILE</br>
-   :break</br>
-   :continue</br>
+. . :break</br>
+. . :continue</br>
 -->FOR</br>
-   :range </br>
-   :pass statement</br>
+. . :range </br>
+. . :<b>pass</b> statement</br>
 
 </br>
 </br>

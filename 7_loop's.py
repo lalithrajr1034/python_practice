@@ -115,10 +115,23 @@ for a in index:
 s=range(2,10,3)
 for i in s:
     print(i)
-    
+
 
    # (or)
 
 for d in range(  2 ,    20 ,  2  ):   
 #             start   stop   step
     print(d)
+
+
+
+#------>>pass statement
+# this statement does not do any thing it is used as a placeholder for feature code
+
+for variable in range(10):
+    pass
+print("hi i am tejas")
+
+
+
+
