@@ -1,5 +1,11 @@
 # python_practice
 this is for practice purpse
+STRINGS<br><br>
+-->string Concatination<br>
+-->string length<br>
+-->Indexing<br>
+-->Slicing<br>
+-->Function<br>
 </br>
 </br>
 </br>
