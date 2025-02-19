@@ -37,6 +37,9 @@ a="suraj"
 print(len(a))#this helps to define the length of the numbers
 
 
+
+
+
 #------------INDEXING------------
 
 #This indexing is says that each element is acessed by the index value
@@ -60,6 +63,11 @@ matrix=[[1,2,3], #index value are 0 1 2
       ]
 print(matrix[0][0])  
 
+
+
+
+
+
 #---------Slicing---------
 # slicing is acessing part ot the string
 #in this slicing also we can acess in -ve indexing
@@ -82,10 +90,8 @@ print(var[3:])#default value is len(var)
 
 
 
+#-----------------Functions------------------------------------------
 
-
-
-#-----------------Slicing------------------------------------------
 
 val="i am lalith raj studying in MIT mysore"
 print(val.capitalize()) #out put is  I am lalith raj studying in mit mysore
@@ -93,3 +99,13 @@ print(val.endswith("e")) #out put is True
 print(val.replace("i","a")) #out put is a am lalath raj studyang an MIT mysore
 print(val.find("lalith")) #out put is 5
 print(val.count("i")) #out put is 4
+# actual string is not changed
+print(val)
+
+
+
+# so to manupulate the string
+
+val="i am lalith raj $studying in MIT mysore"
+val=val.replace("i","a")
+print(val)
