@@ -31,6 +31,8 @@ lis.sort(reverse=True)#set list in desending order [54, 38, 34, 34, 7, 6, 2, 1]
 a.reverse()#it will reverse list [38, 6, 7, 54, 34, 2, 1]
 a.insert(2     , 3000000)# it will insert 3000000 in index 2 output is [38, 6, 3000000, 7, 54, 34, 2, 1]
 # insert(index , value  )  
+a.remove(1)#removes a 1 if 1 is multiple then removes first element of same kind
+a.pop(3)#removes a 3rd index element
 print(lis)  
 print(a)
 

@@ -5,7 +5,7 @@ STRINGS<br><br>
 -->string length<br>
 -->Indexing<br>
 -->Slicing<br>
--->Function<br>
+-->Function<br>  
 </br>
 </br>
 </br>
@@ -16,7 +16,12 @@ LOOPS</br></br>
 -->FOR</br>
 . . . . . Range </br>
 . . . . . <b>Pass</b> statement</br>
-
+</br>
+</br>
+</br>
+LIST'S<br>
+-->Slicing<br>
+-->Methods of list<br>
 </br>
 </br>
 </br>
