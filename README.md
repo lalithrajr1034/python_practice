@@ -1,5 +1,5 @@
 # python_practice
-this is for practice purpse
+this is for practice purpse<br><br>
 STRINGS<br><br>
 -->string Concatination<br>
 -->string length<br>
@@ -22,6 +22,7 @@ LOOPS</br></br>
 LIST'S<br>
 -->Slicing<br>
 -->Methods of list<br>
+-->Touple's</br>
 </br>
 </br>
 </br>
