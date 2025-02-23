@@ -109,3 +109,15 @@ print(val)
 val="i am lalith raj $studying in MIT mysore"
 val=val.replace("i","a")
 print(val)
+
+
+#write a porgram to find a palandrome(EX:-malayalam) 
+
+a=[1,2,3,4,3,2,1]
+b=[1,2,3,4,3,2,1]
+b.reverse()
+if a==b:
+    print ("value are palindromy")
+else:
+    print("elements are not palindromy")    
+    

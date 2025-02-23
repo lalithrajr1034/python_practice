@@ -36,3 +36,16 @@ a.pop(3)#removes a 3rd index element
 print(lis)  
 print(a)
 
+
+
+#------------------TOUPLES----------
+
+#Touple are the immutable, and used to store the elements in paranthesis()
+
+c=input()
+a=(2,3,4,5,6,7,3,"m")
+l={23,"ds",23,"df"}
+print(a.index(c))#helps to find the index of element
+print(a.count(c))#helps to find the how many same type of elements are presnt
+
+                                                                                                                                                        

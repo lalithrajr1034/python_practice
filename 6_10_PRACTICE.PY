@@ -79,8 +79,20 @@ else:
     print(f"{num} is a prime number.")
 
 
+#Finding the runner(second largest element) in list
 
 
 
 
+list=[2,3,6,6,5]
 
+list.sort(reverse=True)
+n=1
+while n<len(list) and list[0]==list[n]:
+    n+=1
+
+if n<len(list):
+    print(list[n])
+
+
+#

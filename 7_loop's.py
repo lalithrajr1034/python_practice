@@ -134,4 +134,10 @@ print("hi i am tejas")
 
 
 
+#------->>to give spac or ,(coma) for every word
+
+name="lalithraj"
+for na in name:
+    print(na,end=",")
+        
 
