@@ -1,5 +1,2 @@
-name="lalithraj"
-for na in name:
-    print(na,end=",")
-        
-
+c=7%-2
+print(c)
