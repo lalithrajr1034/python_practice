@@ -95,4 +95,20 @@ if n<len(list):
     print(list[n])
 
 
-#
+#Write a program that takes a list of numbers as input and prints all even numbers. If the list contains no even numbers, print "No even numbers found."
+    
+a = [1, 3,  5,  7,  9]
+i = 0
+c = len(a)
+found_even = True  
+while i < c:
+    if a[i] % 2 == 0:
+        print("Even number:", a[i])
+        found_even = False
+    i += 1
+
+if found_even:
+    print("No even numbers found.")
+   
+   
+#2. Loops + Dictionary (Take a string as input and count the occurrences of each character using a dictionary. Print the dictionary after counting)
