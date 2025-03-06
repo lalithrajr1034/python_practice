@@ -106,7 +106,7 @@ print(val)
 
 # so to manupulate the string
 
-val="i am lalith raj $studying in MIT mysore"
+val="i am lalith raj $studying in MIT mysore"  
 val=val.replace("i","a")
 print(val)
 
