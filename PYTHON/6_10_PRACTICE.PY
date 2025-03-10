@@ -112,3 +112,32 @@ if found_even:
    
    
 #2. Loops + Dictionary (Take a string as input and count the occurrences of each character using a dictionary. Print the dictionary after counting)
+
+
+
+
+
+
+
+
+#loops  test
+
+lalith=int(input("Enter the number"))
+
+for nam in range(2,lalith):
+    print(f"hi{nam} * {lalith}")
+
+
+s="lkfhiureybnjk"
+d=[2,3,4]
+b={"key":"value"}
+c=(2,34,4,s,d,b)
+print(c)
+
+a=int(input())
+b=int(input())
+e=int(input())
+d=pow(a,b)
+print(d)
+c=pow(a,b,e)
+print(c)
