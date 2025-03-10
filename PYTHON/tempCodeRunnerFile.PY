@@ -1,7 +1,8 @@
-a=4
-val=1
-while a>1:
-    val*=a
-    print(val,end=" ")
-    a-=1
-    
+def my_func(nu):
+    if nu%2==0:
+        print("ODD")
+    else:
+        print("EVEN")    
+
+a=int(input())
+my_func(a)

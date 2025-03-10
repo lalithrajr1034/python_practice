@@ -29,6 +29,22 @@ LIST'S<br>
 DICTIONARY</br>
 -->Nested dictionary<br>
 -->Dictionary methods<br>
+</br>
+</br>
+</br>
+SET'S</br>
+</br>
+</br>
+</br>
+FUNCTION'S</br>
+-->Built in Function's</br>
+-->User Define Function's</br>
+-->Default Parameter</br>
+</br>
+</br>
+</br>
+
+
 
 NOTE'S:</br></br>
  
