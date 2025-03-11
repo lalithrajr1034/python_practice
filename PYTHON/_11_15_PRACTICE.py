@@ -61,3 +61,14 @@ def sum(inpu):
 na=int(input())
 g=sum(na)
 print(g)    
+
+#Write a recursive function to print all elements in a list 
+def lis(li, ind):
+    if ind == 0:
+        return
+    lis(li, ind - 1)  # Recursive call
+    print(li[ind - 1])  # Print the element
+
+lli = [2, 3, 5, 76, 87, 5]
+a = len(lli)
+lis(lli, a)

@@ -1,8 +1,11 @@
-def sum(inpu):
-    if inpu==1:
-        return 1
-    return sum(inpu-1) + inpu
+def lis(li,ind):
+    if ind==0:
+        return 0
+    v=lis(ind-1)
+    print(li[v])
+    
 
-na=int(input())
-g=sum(na)
-print(g)    
+lli=[2,3,5,76,87,5]    
+a=len(lli)
+lis([2,3,5,76,87,5],a)
+
