@@ -1,8 +1,8 @@
-def my_func(nu):
-    if nu%2==0:
-        print("ODD")
-    else:
-        print("EVEN")    
+def sum(inpu):
+    if inpu==1:
+        return 1
+    return sum(inpu-1) + inpu
 
-a=int(input())
-my_func(a)
+na=int(input())
+g=sum(na)
+print(g)    

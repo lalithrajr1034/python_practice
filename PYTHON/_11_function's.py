@@ -24,3 +24,18 @@ la(2,3,5)
 def lal(a=2,b=3): #parametres (a,b=4) but this is error(a=2,b)
     print(a*b)
 lal()     #arguments tested (b=5),1 and (3,5)
+
+#...................................................................
+
+#PRACTICE QUESTIONS
+#Write a function factorial(n) that returns the factorial of a number using recursion
+
+def factorial(n):
+    fact = 1
+    while n > 1:
+        fact *= n
+        n -= 1
+    return fact
+
+n = int(input())
+print(factorial(n))

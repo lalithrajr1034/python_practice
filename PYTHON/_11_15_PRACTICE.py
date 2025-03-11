@@ -1,3 +1,5 @@
+
+##FUNCTION
 #Write a function to print the length of a list 
 
 lis=[2,3,4,5,6,8,9,7]
@@ -35,5 +37,27 @@ def factorial(numb):
         numb -= 1  
     return fact  
 
+
 num = int(input())
 print(factorial(num))
+
+def my_func(nu):
+    if nu%2==0:
+        print("ODD")
+    else:
+        print("EVEN")    
+
+a=int(input())
+my_func(a)
+
+
+#Recursion problem
+#Write a recursive function to calculate the sum of first n natutal numbers 
+def sum(inpu):
+    if inpu==1:
+        return 1
+    return sum(inpu-1) + inpu
+
+na=int(input())
+g=sum(na)
+print(g)    
