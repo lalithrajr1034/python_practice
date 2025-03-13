@@ -20,3 +20,17 @@ def factorial(n):
     
 num=int(input("Enter the factotial"))
 print(f"Factorial of {num} is {factorial(num)}")#f-string
+
+
+
+
+#recurtion to print list
+def fact(lis,ind=0):
+    if ind==len(lis):
+        return
+    print(lis[ind]) 
+    return fact(lis,ind+1) 
+ 
+    
+li=[2,3,5,3,2,4,5]    
+fact(li)  
