@@ -14,6 +14,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
 from django.contrib import admin
 from django.urls import path
 from First_Practice import views  # Ensure you are importing views from the correct location
@@ -23,5 +24,3 @@ urlpatterns = [
     path('', views.home, name='home'),  # Homepage route
     path('lalith/<str:para>/', views.first, name='first'),  # Fix this line
 ]
-
-

@@ -1,6 +1,6 @@
 #Type conversion
 
-#this is convertted automatically
+#this is converted automatically
 
 a=1   #int
 b=2   #int
@@ -23,3 +23,6 @@ b=2
 c=a+b
 print(type(a))
 print(c)
+
+inp=input("Enter the number")
+print(inp)

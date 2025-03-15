@@ -17,7 +17,7 @@ while ran>=num:                      # in while loop
 
 # print number from 100 to 1  
 
-for variable in range(100 , 0 ,-1):  # in for loop
+for variable in range(100 , 0 ,-1):  # in  for loop
     print(variable)     
 
 
