@@ -72,3 +72,5 @@ def lis(li, ind):
 lli = [2, 3, 5, 76, 87, 5]
 a = len(lli)
 lis(lli, a)
+
+#Write a Python function called is_prime(n) that takes an integer n as input and returns True if n is a prime number, otherwise returns False.

@@ -116,10 +116,6 @@ if found_even:
 
 
 
-
-
-
-
 #loops  test
 
 lalith=int(input("Enter the number"))
