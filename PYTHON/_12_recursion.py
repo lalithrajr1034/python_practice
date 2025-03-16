@@ -33,4 +33,5 @@ def fact(lis,ind=0):
  
     
 li=[2,3,5,3,2,4,5]    
-fact(li)  
+fact(li)
+
