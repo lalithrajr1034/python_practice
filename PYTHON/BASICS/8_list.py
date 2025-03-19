@@ -6,6 +6,7 @@ print(ind[-1])
 #changing element(it is possible only in list but not in strings)
  
 ind=[67,76,45,78]
+print(max(ind))
 
 ind[1]=3
 print(ind)   #replace 76 by 3 output is [67, 3, 45, 78]
