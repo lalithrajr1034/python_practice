@@ -1,8 +1,10 @@
+class Dog:
+    def __init__(self, name, breed):
+        self.name = name 
+        self.breed = breed  
 
-class lalith:
-    oper1="student"
-    oper2="son"
-    oper3="friend"
+    def bark(self):
+        print(f"{self.name} says woof!")
 
-la=lalith()
-print(la.oper1, la.oper2)
+dog1 = Dog("Rex", "German Shepherd")
+dog2 = Dog("Bella", "Bulldog")
