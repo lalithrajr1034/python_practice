@@ -40,3 +40,15 @@ while inpu >=i:
     print(st)
     i+=1
     print(len(st))
+
+
+# Write a program that checks whether a number is positive, negative, or zero    
+
+number=int(input("Enter your number "))
+if number==0:
+    print("you entered zero")
+else:    
+    print("-ve")if number<0  else print("+ve")
+     
+
+     
