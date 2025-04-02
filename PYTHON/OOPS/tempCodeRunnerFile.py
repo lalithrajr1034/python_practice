@@ -1,10 +1,7 @@
-class Dog:
-    def __init__(self, name, breed):
-        self.name = name 
-        self.breed = breed  
+#Constructor is a special method that automatically execute when a object of a class is ctreated 
+class constructor:
+    def __init__(self,myname):#Self parameter is pointig towards object 
+        self.name=myname #self = objectname.attribute
 
-    def bark(self):
-        print(f"{self.name} says woof!")
-
-dog1 = Dog("Rex", "German Shepherd")
-dog2 = Dog("Bella", "Bulldog")
+ob=constructor("hi")
+print(ob.name)
