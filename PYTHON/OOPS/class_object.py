@@ -28,11 +28,17 @@ ob=constructor()
 print(constructor.name)
 
 
+#______________________
 
-class l:
+class name:
+
+# This is constructor
     def __init__(self):
-        print()
-    def lalith(self):
-        self.a=4
-        print(a)
-l.lalith()        
+        print("This is constructor")
+# this is paramaterised constructor(in this constructor we passed "nam" as a parameter except self)
+    def __init__(self,nam):
+        self.a=nam
+
+obj=name("Nithin")
+print(obj.a)
+
