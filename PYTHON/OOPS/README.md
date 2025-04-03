@@ -6,4 +6,6 @@ by using oops we can create our own datatype and somany feature <br>
   Abstraction<br><br><br>
 
 class and object <br>
-    function and method <br>
+    Method(Functions)<br>
+    Attribute(variable)<br>
+
