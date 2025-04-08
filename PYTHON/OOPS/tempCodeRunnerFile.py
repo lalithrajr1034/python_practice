@@ -1,9 +1,8 @@
-class name:
-    def __init__(self,nam):
-        self.a=nam
-        a=2
-        print(a)
+class School:
+    def __init__(self):
+        print("Hi lalih")
+    def artificial_inteligence(self):
+        self.a=3
+        print("This is class")
 
-obj=name("Nithin")
-print(obj.a)
-name.a()
+School.artificial_inteligence()
