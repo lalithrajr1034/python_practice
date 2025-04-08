@@ -1,3 +1,3 @@
-from sec import name
+from function import name
 
 print(name())
