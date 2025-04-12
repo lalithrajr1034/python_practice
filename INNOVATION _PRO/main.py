@@ -3,6 +3,7 @@ import pyautogui
 import time
 import re
 import platform
+import pandas as pd
 from dataclasses import dataclass
 from typing import List
 
@@ -46,7 +47,7 @@ class WhatsAppAutomation:
                 window = win32gui.FindWindow(None, window_title)
                 if window:
                     win32gui.ShowWindow(window, 3)  # SW_MAXIMIZE
-                    time.sleep(1)
+                    time.sleep(0.5)
                     return True
             return False
         except Exception as e:
@@ -62,7 +63,7 @@ class WhatsAppAutomation:
             pyautogui.write('whatsapp')
             time.sleep(self.wa_delay)
             pyautogui.press('enter')
-            time.sleep(5)  # Wait for app to launch
+            time.sleep(0.5)  # Wait for app to launch
             
             # Ensure window is maximized
             return self.maximize_window()
@@ -88,7 +89,7 @@ class WhatsAppAutomation:
             pyautogui.press('down')
             time.sleep(0.3)
             pyautogui.press('enter')
-            time.sleep(2)
+            time.sleep(0.5)
             
             pyautogui.write(message)
             time.sleep(0.5)
@@ -131,11 +132,11 @@ class WhatsAppSender:
         for index, contact in enumerate(contacts, 1):
             # Validate contact number
             if not self.validator.validate_indian_number(contact.number):
-                print(f"⚠️  Invalid number format: {contact.number}")
+                print(f"X  Invalid number format: {contact.number}")
                 continue
             
             # Send message
-            print(f"\n📨 Processing {index}/{total_contacts}: {contact.name or contact.number}")
+            print(f"\n Processing {index}/{total_contacts}: {contact.name or contact.number}")
             if self.whatsapp.send_single_message(contact, message):
                 print("✓ Message sent successfully")
             else:
@@ -148,19 +149,21 @@ class WhatsAppSender:
         
         # Clean up
         self.whatsapp.minimize_whatsapp()
-        print("\n🎉 Finished processing all contacts!")
+        print("\n Finished processing all contacts!")
 
 
 # ==============================================
 #               EXAMPLE USAGE                  
 # ==============================================
 if __name__ == "__main__":
+
     # Sample contact list
+    
     demo_contacts = [
         Contact(number="8317384966"),
-        Contact(number="9113803759")
+        Contact(number="9141823533")
        ]
-    
+
     # Sample message
     demo_message = "Hello! This is an automated message from Python."
     
