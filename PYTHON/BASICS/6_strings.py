@@ -121,3 +121,12 @@ if a==b:
 else:
     print("elements are not palindromy")    
     
+
+
+
+#string method------------------
+
+
+str="lalit-raj-r,r,raj"
+fname,mname,lname=str.split(",")
+print(fname)    
