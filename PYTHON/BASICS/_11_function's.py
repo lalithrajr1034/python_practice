@@ -21,19 +21,36 @@ la(2,3,5)
 
 #default of parameter...............................................
 
-def lal(a=2,b=3): #parametres (a,b=4) but this is error(a=2,b)
+def lal(a,b=3): #parametres (a,b=4) but this is error(a=2,b)
     print(a*b)
-lal()     #arguments tested (b=5),1 and (3,5)
+lal(2)     #arguments tested (b=5),1 and (3,5)
 
 #...................................................................
 
 #PRACTICE QUESTIONS
 #Write a function factorial(n) that returns the factorial of a number using recursion
 
+
+
+def fact():
+    num=1
+    inp=int(input("Enter the factorial"))
+    while inp>1:
+        num*=inp
+        inp-=1
+    return num    
+
+
+print(fact())
+
+
+
+
+
 def factorial(n):
     fact = 1
     while n > 1:
-        fact *= n
+        fact=fact * n
         n -= 1
     return fact
 

@@ -1,13 +1,10 @@
-class Main:
-    def maths(self,TeacName):
-        self.a=TeacName
-        print("Entered maths")
-    def chemistry(self):
-        print("Entered chemistry")
-    def bio(self):
-        print("Entered bio")
-    def physics(self):
-        print("Entered physics")        
-subj=Main()
-subj.maths("Rudresh")
-print(subj.a)
+class lalith:
+    add=1
+    def __init__(self,name,age):
+        self.nam=name
+        self.age=age
+    def raj(self):
+        self.age+=lalith.add    
+obj=lalith("lalith",19)        
+obj.raj()
+print(obj.age)
