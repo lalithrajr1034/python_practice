@@ -7,5 +7,6 @@ by using oops we can create our own datatype and somany feature <br>
 
 class and object <br>
     Method(Functions)<br>
-    Attribute(variable)<br>
-
+    Attribute(Instance variable)<br>
+<br><br>
+Creating our own data type<br>

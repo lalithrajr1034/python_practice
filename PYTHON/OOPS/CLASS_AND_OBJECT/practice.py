@@ -30,3 +30,4 @@ class Main:
 subj=Main()
 subj.maths("Rudresh")
 print(subj.a)
+

@@ -129,4 +129,10 @@ else:
 
 str="lalit-raj-r,r,raj"
 fname,mname,lname=str.split(",")
-print(fname)    
+print(fname)  
+
+
+a=3
+b=6
+c="{}/{}".format(a,b)
+print(c)
