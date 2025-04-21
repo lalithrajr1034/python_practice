@@ -10,7 +10,7 @@
 #NOTE :- class name should be in pascal case = ThisIsPascalCase
 #NOTE :- Function(or Method) should be in snake case = this_is_snake_case
 
-#instance variable:
+#instance variable:it is a type of vatiable in which different value for different object
 
 class lalith:
     a="allalal"    

@@ -34,20 +34,15 @@ class mainpy:
 class Atm:
     def __init__(self):
         self.balance=0
-        self.pin=""
+        self.pin=int(input("Enter a pin "))
         self.main=mainpy      #object
         
     def create_pin(self):
-            input_pin1=input("Enter a pin ")
-            input_pin2=input("Re-Enter a pin ")
-            self.pin=input_pin1
-            if input_pin1==input_pin2:
+            self.pin=input("Enter a pin ")
+            if True:
                 print("Entered pin id is sucessfully set\n")
-                self.depost_money()
-            else:
-                print("Entered pin dose not matched\n\t\tStarting from first\n.....................................\n\n")
-                self.create_pin()
-            
+                self.main()
+                
     def depost_money(self):
            self.deposit_pin=input("Enter the pin to deposit money ")
            
