@@ -12,7 +12,7 @@ ind[1]=3
 print(ind)   #replace 76 by 3 output is [67, 3, 45, 78]
 
 
-#---------------- slicing --------
+#---------------- slicing -------- list_name[start:stop:step]---
 
 #it is possible in list also 
 
@@ -20,6 +20,8 @@ a=[1,23,4,6,7,65]
 # a[Start_index : Ending_index]
 c=a[ 1          :            4]
 print(c) #output is [23, 4, 6]
+
+
 
 
 
