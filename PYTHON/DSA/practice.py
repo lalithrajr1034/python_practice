@@ -12,9 +12,3 @@ for i in range(0,len(l)//2):
 print(l)
 
 
-l=[1,2,3,4,5]
-le=len(l)-1
-for i in range(le,-1,-1):
-    le=len(l)
-    new_list=le-1-i
-    l[i]=l[new_list]

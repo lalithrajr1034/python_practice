@@ -1,6 +1,4 @@
 
-a=[1,23,4,6,7,65]
-# a[Start_index : Ending_index]
-c=a[          :            ]
-print(c) #output is [23, 4, 6]
-
+la=[2,1,8,6,5,9]
+la.sort()
+print(la)
