@@ -1,7 +1,10 @@
-# An array is the linear data structure which helps to store a similar type of data
+def listt():
+    l=[]
+    size=10
+    for index in range(0,size):
+        a=l[index]
+        if index==size-2:
+            size =size+100
 
-import numpy as np
-age=20
-name=20
-a = np.array(["li", "age", "name"])
-print(a)
+    print(size)
+listt()    
