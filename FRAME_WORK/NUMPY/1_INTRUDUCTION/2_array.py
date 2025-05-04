@@ -35,7 +35,7 @@ arr3d = np.array([
 print(arr3d)
 
 #------------------------her we are creating default value -----------------
-#To generate a full onse (or zeroes ,any number) in arrat=y
+#To generate a full onse (or zeroes ,any number) in array
 
 import numpy as np
 #variable=np.zeroes(shape)      in shape for 1d (5) for 2d ((5,5))
