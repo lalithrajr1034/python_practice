@@ -4,6 +4,7 @@
 
 
 #One dimension array
+ #these array element are stored in one dimension 
 import numpy as np
 
 Arr=np.array([2,3,4,45,6])
@@ -15,6 +16,7 @@ arr=np.array(a)
 print(arr)   
 
 #Multi dimensional array (matrix)
+ #these array element is stored in multidimension (or more than one dimension) 
 import numpy as np
 
 mult_arr=np.array([[3,4,5,6],
@@ -22,6 +24,15 @@ mult_arr=np.array([[3,4,5,6],
 print(mult_arr)
 
 
+#there is a 3d example
+import numpy as np
+
+arr3d = np.array([
+  [[1, 2], [3, 4]],     
+  [[5, 6], [7, 8]]     
+])
+
+print(arr3d)
 
 #------------------------her we are creating default value -----------------
 #To generate a full onse (or zeroes ,any number) in arrat=y
