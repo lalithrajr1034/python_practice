@@ -23,7 +23,7 @@ print(mult_arr)
 
 
 
-#------------------------her we are creating array by default value -----------------
+#------------------------her we are creating default value -----------------
 #To generate a full onse (or zeroes ,any number) in arrat=y
 
 import numpy as np
