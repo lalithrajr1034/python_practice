@@ -1,3 +1,5 @@
+#Convert the datatype of a array 
 import numpy as np
-a=np.array([[2,3,5,6],[2,3,5,6]])
-print(a.dtype)
+a=np.array([2.3,23.2,23.2,32])
+b=a.astype(int)
+print(a.astype(int))
