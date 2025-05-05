@@ -60,3 +60,4 @@ import numpy as np
 #               arange(start,stop,step)
 Arange_array=np.arange(0,    10,   1)
 print(Arange_array)
+

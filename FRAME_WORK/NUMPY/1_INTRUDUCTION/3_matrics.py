@@ -8,7 +8,10 @@ import numpy as np
 full_array=np.full((4,4),7)
 print(full_array)
 
-#------------------------------
-#creating a identity matrics
+#--------------------creating a identity matrics
+
 import numpy as np
 #eye(size)
+eye_arry=np.eye(5) #5 is a row and column
+print(eye_arry)
+
