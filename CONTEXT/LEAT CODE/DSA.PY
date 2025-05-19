@@ -13,8 +13,6 @@ class queue:
         self.enqueue=-1
         self.dequeue=-1
         self.lis=[]
-
-
     def Info(self):
         if len(self.lis)==self.enqueue:
             print("queue is over flow")
@@ -26,6 +24,7 @@ class queue:
         self.enqueue=self.enqueue + 1         
         self.lis.append(element) 
         print(self.lis)
+
     def Del_element(self):
         if self.enqueue==-1 and self.dequeue==-1:
             print("Queue is underflow")
@@ -34,7 +33,6 @@ class queue:
             self.lis.pop()
     def Print_element(self):
         print(self.lis)            
-
 size=int(input("say the size :"))
 
 
@@ -48,5 +46,6 @@ del_size=int(input("say how many elements to delete :"))
 
 for i in range(1,del_size+1): 
   obj.Del_element()    
+  
 obj.Print_element()
 
