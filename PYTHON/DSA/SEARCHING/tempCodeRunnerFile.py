@@ -1,11 +1,5 @@
-#For this we will select the pivot value and compare the all elements and keep lesser value in left side and greateer value in right side \
-    
-class quicksork:
-    def __init__(self):
-        pass    
-    def function(self,arr):
-        print(arr(1))
-
-arr=[7,4,3,5,7,8,0,3]
-obj=quicksork(arr)
-print(obj)    
+rang=int(input("enter the number of the elements to input:"))
+for i in range(1,rang):
+    ele=int(input(f"Enter the {i} element"))
+    lis=[ele]
+    print(lis)        

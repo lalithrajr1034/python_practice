@@ -1,3 +1,11 @@
 pascal case = ThisIsPascalCase   (CLASS NAME)
 cammel case = thisIsCammelCase
 snake  case = this_is_snake_case
+
+
+
+
+Terms
+
+palandroem 
+strictly greater (Only greater value it dosent include same value)

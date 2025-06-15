@@ -9,3 +9,6 @@ a=10
 b=39
 a+=b
 print(a)
+
+
+property()
