@@ -1,6 +1,7 @@
-pascal case = ThisIsPascalCase   (CLASS NAME)
-cammel case = thisIsCammelCase
-snake  case = this_is_snake_case
+pascal case = ThisIsPascalCase     (CLASS NAME)
+cammel case = thisIsCammelCase     -----not used in python because official style guide (PEP 8) prefers snakea_case
+snake  case = this_is_snake_case   (OBJECT NAME, FUNCTION'S NAME, VARIABLE NAME, MODULE NAME, FILE NAME)
+upper  case = THIS_IS_UPPER_CASE   (CONSTRAINTS)
 
 
 
