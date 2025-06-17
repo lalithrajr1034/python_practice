@@ -1,3 +1,25 @@
+
+
+
+# Python truthy and falsy values''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+lis=[56,"45"]
+if lis:# condition is True if list contains some element 
+   print("it is not empty") 
+
+
+# we can specify the the same kind of logic in many concepts  
+"""
+if "hello":   True (non-empty string)
+if "":        False (empty string)
+if [1, 2]:    True (non-empty list)
+if []:        False (empty list)
+if 0:         False (zero is false)
+if 5:         True
+
+"""
+##.....................................................................................................
+
+
 #if-elif-else
 
 a=int(input("Enter the age="))
