@@ -2,8 +2,7 @@
 
 
 #OUTPUT 2.857142857142857
-# here while printing a it will show a fraction(2.857142857142857) we want to store same as 20/7
-
+#while printing a it will show a fraction(2.857142857142857) we want to store same as 20/7
 
 
 class Fraction:
@@ -22,7 +21,11 @@ class Fraction:
         temp1=sel.numerator*other.denominator+sel.denominator*other.numerator
         temp2=sel.denominator*other.numerator+sel.numerator*other.denominator
         return f"{temp1}/{temp2}"
+    
 obj1=Fraction(7,8) #creating object
+print(obj1)
+print(type(obj1))
 obj2=Fraction(5,7)
-print(obj1*obj2)
 
+add_obj=obj1+obj2
+print(add_obj)
