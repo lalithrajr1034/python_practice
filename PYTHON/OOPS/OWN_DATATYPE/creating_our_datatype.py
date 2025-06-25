@@ -21,6 +21,9 @@ class Fraction:
         temp1=sel.numerator*other.denominator+sel.denominator*other.numerator
         temp2=sel.denominator*other.numerator+sel.numerator*other.denominator
         return f"{temp1}/{temp2}"
+    #STILL MORE VE CAN SO 
+    #__sub__
+    #__truediv
     
 obj1=Fraction(7,8) #creating object
 print(obj1)

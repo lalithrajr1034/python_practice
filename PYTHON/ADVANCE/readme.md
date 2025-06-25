@@ -1,4 +1,11 @@
-Topic i have to cover
+TOPICS I HAVE COVERED
+    
+namespace.py    
+    -Namespace
+    -Scope
+    
+
+TOPICS I HAVE TO COVER
 
 🧠 Data Manipulation & Logic
 List Comprehensions
