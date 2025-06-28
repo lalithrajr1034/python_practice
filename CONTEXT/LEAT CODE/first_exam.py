@@ -1,26 +1,47 @@
-class Solution:
-    def twoSum(self, lis ,target):
-        for i in range(0,len(lis)-2):
-            if lis[i]==target:
-                print(f"[{i}]")
-            elif (lis[i]+lis[i+1])==target:
-                print(f"[{i},{i+1}]") 
-            elif (lis[i]+lis[i+2])==target:
-                print(f"[{i},{i+2}]")         
-
-
-
-nums=[2,7,11,15]
-target=9
-obj=Solution()
-b=obj.twoSum(nums,target)
-
-
-class Solution:
-    def twoSum(self, nums, target):
-        seen = {}  # Stores value -> index
-        for i, num in enumerate(nums):
-            complement = target - num
-            if complement in seen:
-                return [seen[complement], i]
-            seen[num] = i
+problems = [
+    ("1", "Arrays", "Two Sum", "Easy", "https://leetcode.com/problems/two-sum/", "✅"),
+    ("2", "Arrays", "Best Time to Buy and Sell Stock", "Easy", "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/", "✅"),
+    ("3", "Arrays", "Maximum Subarray (Kadane's)", "Medium", "https://leetcode.com/problems/maximum-subarray/", "✅"),
+    ("4", "Arrays", "Move Zeroes", "Easy", "https://leetcode.com/problems/move-zeroes/", "✅"),
+    ("5", "Arrays", "Missing Number", "Easy", "https://leetcode.com/problems/missing-number/", "✅"),
+    ("6", "Arrays", "Contains Duplicate", "Easy", "https://leetcode.com/problems/contains-duplicate/", "✅"),
+    ("7", "Arrays", "Intersection of Two Arrays II", "Easy", "https://leetcode.com/problems/intersection-of-two-arrays-ii/", "✅"),
+    ("8", "Strings", "Valid Anagram", "Easy", "https://leetcode.com/problems/valid-anagram/", "✅"),
+    ("9", "Strings", "Longest Substring Without Repeating Characters", "Medium", "https://leetcode.com/problems/longest-substring-without-repeating-characters/", "✅"),
+    ("10", "Strings", "Reverse Words in a String", "Medium", "https://leetcode.com/problems/reverse-words-in-a-string/", "✅"),
+    ("11", "Strings", "Implement strStr()", "Easy", "https://leetcode.com/problems/implement-strstr/", "✅"),
+    ("12", "Strings", "First Unique Character in a String", "Easy", "https://leetcode.com/problems/first-unique-character-in-a-string/", "✅"),
+    ("13", "Hash Maps / Sets", "Group Anagrams", "Medium", "https://leetcode.com/problems/group-anagrams/", "✅"),
+    ("14", "Hash Maps / Sets", "Top K Frequent Elements", "Medium", "https://leetcode.com/problems/top-k-frequent-elements/", "✅"),
+    ("15", "Hash Maps / Sets", "Two Sum (using HashMap)", "Easy", "https://leetcode.com/problems/two-sum/", "✅"),
+    ("16", "Hash Maps / Sets", "Contains Duplicate II", "Easy", "https://leetcode.com/problems/contains-duplicate-ii/", "✅"),
+    ("17", "Stack", "Valid Parentheses", "Easy", "https://leetcode.com/problems/valid-parentheses/", "✅"),
+    ("18", "Stack", "Min Stack", "Medium", "https://leetcode.com/problems/min-stack/", "✅"),
+    ("19", "Stack", "Implement Queue using Stacks", "Easy", "https://leetcode.com/problems/implement-queue-using-stacks/", "✅"),
+    ("20", "Stack", "Baseball Game", "Easy", "https://leetcode.com/problems/baseball-game/", "✅"),
+    ("21", "Queue / Sliding Window", "Sliding Window Maximum", "Hard", "https://leetcode.com/problems/sliding-window-maximum/", "🔸"),
+    ("22", "Queue / Sliding Window", "Number of Recent Calls", "Easy", "https://leetcode.com/problems/number-of-recent-calls/", "✅"),
+    ("23", "Queue / Sliding Window", "Moving Average from Data Stream", "Easy", "https://leetcode.com/problems/moving-average-from-data-stream/", "✅"),
+    ("24", "Two Pointers", "Remove Duplicates from Sorted Array", "Easy", "https://leetcode.com/problems/remove-duplicates-from-sorted-array/", "✅"),
+    ("25", "Two Pointers", "Container With Most Water", "Medium", "https://leetcode.com/problems/container-with-most-water/", "🔸"),
+    ("26", "Two Pointers", "Merge Sorted Array", "Easy", "https://leetcode.com/problems/merge-sorted-array/", "✅"),
+    ("27", "Two Pointers", "Valid Palindrome", "Easy", "https://leetcode.com/problems/valid-palindrome/", "✅"),
+    ("28", "Trees (Binary)", "Maximum Depth of Binary Tree", "Easy", "https://leetcode.com/problems/maximum-depth-of-binary-tree/", "✅"),
+    ("29", "Trees (Binary)", "Same Tree", "Easy", "https://leetcode.com/problems/same-tree/", "✅"),
+    ("30", "Trees (Binary)", "Invert Binary Tree", "Easy", "https://leetcode.com/problems/invert-binary-tree/", "✅"),
+    ("31", "Trees (Binary)", "Path Sum", "Easy", "https://leetcode.com/problems/path-sum/", "✅"),
+    ("32", "Trees (Binary)", "Symmetric Tree", "Easy", "https://leetcode.com/problems/symmetric-tree/", "✅"),
+    ("33", "Graphs", "Number of Provinces", "Medium", "https://leetcode.com/problems/number-of-provinces/", "✅"),
+    ("34", "Graphs", "Clone Graph", "Medium", "https://leetcode.com/problems/clone-graph/", "✅"),
+    ("35", "Graphs", "Find if Path Exists in Graph", "Easy", "https://leetcode.com/problems/find-if-path-exists-in-graph/", "✅"),
+    ("36", "Graphs", "Flood Fill", "Easy", "https://leetcode.com/problems/flood-fill/", "✅"),
+    ("37", "Heap / PriorityQueue", "Kth Largest Element in an Array", "Medium", "https://leetcode.com/problems/kth-largest-element-in-an-array/", "✅"),
+    ("38", "Heap / PriorityQueue", "Last Stone Weight", "Easy", "https://leetcode.com/problems/last-stone-weight/", "✅"),
+    ("39", "Heap / PriorityQueue", "Min Heap Implementation", "Easy", "https://leetcode.com/problems/merge-k-sorted-lists/", "✅"),
+    ("40", "DP", "Climbing Stairs", "Easy", "https://leetcode.com/problems/climbing-stairs/", "✅"),
+    ("41", "DP", "House Robber", "Medium", "https://leetcode.com/problems/house-robber/", "✅"),
+    ("42", "DP", "Maximum Product Subarray", "Medium", "https://leetcode.com/problems/maximum-product-subarray/", "✅"),
+    ("43", "DP", "Subset Sum (Target Sum)", "Medium", "https://leetcode.com/problems/target-sum/", "🔸"),
+    ("44", "DP", "Fibonacci Number", "Easy", "https://leetcode.com/problems/fibonacci-number/", "✅"),
+    ("45", "DP", "Maximum Subsequence Score", "Easy", "https://leetcode.com/problems/maximum-score-from-performing-multiplication-operations/", "✅")
+]
