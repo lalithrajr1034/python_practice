@@ -39,7 +39,7 @@ def acess_global():
     a+=1
     print(a) #we came to know that we can read the data and can't write it   
 
-acess_global() 
+acess_global()    
 
 #3
 a=3

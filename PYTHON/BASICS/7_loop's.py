@@ -142,3 +142,25 @@ for na in name:
         
 
 print("hi lalith")
+
+
+#to acess a loop elenect in a list we use a enumerate function
+l=[2,5,42,2,54,7,78,4]
+for i ,val in enumerate(l,1):
+    print(f"index {i} value{val}")
+
+
+
+def zeroshift(nums):
+    current_element = 0
+    for i in range(len(nums)):
+        if nums[i] != 0:
+            temp = nums[current_element]
+            nums[current_element] = nums[i]
+            nums[i] = temp
+            current_element += 1
+    return nums
+
+nums = [1, 0, 0, 2, 1, 0]
+result = zeroshift(nums)
+print(result)
