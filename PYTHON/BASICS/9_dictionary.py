@@ -34,3 +34,11 @@ print(dic.items())    # we get all key and values -->dict_items([('key', 'abcd')
 
 print(dic.get("name"))# we get specific key and value that we entered key name
 
+
+
+
+# ಗುಣಾಕಾರ ಕಾರ್ಯಕ್ಷಮತೆ
+# ಅಂಕೆ1 = 8
+# ಅಂಕೆ2 = 12
+# ಫಲಿತಾಂಶ = ಅಂಕೆ1 * ಅಂಕೆ2
+# print("ಗುಣಾಕಾರ ಫಲಿತಾಂಶ:", ಫಲಿತಾಂಶ)  # Output: ಗುಣಾಕಾರ ಫಲಿತಾಂಶ: 96
