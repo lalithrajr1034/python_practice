@@ -5,6 +5,6 @@ CREATE TABLE students (
     id INT PRIMARY KEY,
     name VARCHAR(50),
     age INT,
-    grade CHAR(1)
+    grade CHAR(10)
 );
 
