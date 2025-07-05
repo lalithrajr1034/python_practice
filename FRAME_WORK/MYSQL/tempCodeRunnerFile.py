@@ -7,6 +7,5 @@ var1 = mysql.connector.connect(
     password='lalithrajr838@',
     host='localhost',
     user='root',
-    database='python_practice'
+    database='python'
 )
-
