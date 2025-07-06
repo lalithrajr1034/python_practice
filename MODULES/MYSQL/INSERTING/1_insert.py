@@ -12,22 +12,25 @@ cur = var.cursor()
 
 # cur.executemany(insert_queary,insert_value) # or "execute()" for single input
 
-# var.commit() # when we perform a UPDATE DELETE and INSERT then the queary will not going to save so we have to use a " .commit() "
+# var.commit()                  # when we perform a UPDATE DELETE and INSERT then the queary will not going to save so we have to use a " .commit() "
 
 
-"""Type 2"""
-id=4
-name= "lalith"
-age = 46
-grade = "a"
-cur.execute(f"insert into students value({id},'{name}',{age},'{grade}')")
-print(cur)
-var.commit()
+# """Type 2"""
+# id=4
+# name= "lalith"
+# age = 46
+# grade = "a"
+# cur.execute(f"insert into students value({id},'{name}',{age},'{grade}')")
+# var.commit()
 
 cur.execute("select * from students;")
 # Print all rows
+cur.fetchone()
+print(cur)
 for row in cur:
     print(row)
+
+
 
 # Clean up
 cur.close()
