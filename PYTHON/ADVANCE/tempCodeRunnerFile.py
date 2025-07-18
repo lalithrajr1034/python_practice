@@ -1,5 +1,10 @@
-a = [4,5,7]
-print(a)
-def print():
-    hi = "lalith raj r"
-print()    
+def decorator(a):
+    def wrapper(*z):
+        print("**********")
+        a(*z)
+        print("**********")
+    return wrapper
+@decorator
+def sec(n):
+    print("my name is lalith raj",n)
+sec("hi lalith")
