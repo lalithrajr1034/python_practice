@@ -16,7 +16,7 @@ def EnclosedNamespace_2():
     def EnclosedNamespace_1():
         print("this is a non local or EnclosedNmaespace_1")
         def LocalNamespace():
-            print("this is a localNamespace")
+            print("this is a localNamespace")        
         LocalNamespace()
     EnclosedNamespace_1()    
 EnclosedNamespace_2()
@@ -74,4 +74,4 @@ def enclosed_name():
         a+=1
         print(a)  
     return local_name()
-enclosed_name() 
+enclosed_name()    

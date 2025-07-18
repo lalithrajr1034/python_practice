@@ -1,8 +1,5 @@
-a=3
-def enclosed_name():
-    print("this is a enclosednamespace")
-    def local_name():
-        a=1
-        print(a)  
-    return local_name()
-enclosed_name() 
+a = [4,5,7]
+print(a)
+def print():
+    hi = "lalith raj r"
+print()    

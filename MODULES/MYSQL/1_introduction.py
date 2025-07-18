@@ -18,4 +18,9 @@ for i in cur:
     print(i)
     
 
+
+# sql = f"SELECT * FROM users WHERE username = '{username}'"
+# This is dangerous — it's vulnerable to SQL injection
+# Can cause bugs if the input contains ', ", or special characters
+                                                  
                                                   

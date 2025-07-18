@@ -37,7 +37,7 @@ print(dic.get("name"))# we get specific key and value that we entered key name
 
 
 
-# ಗುಣಾಕಾರ ಕಾರ್ಯಕ್ಷಮತೆ
+# # ಗುಣಾಕಾರ ಕಾರ್ಯಕ್ಷಮತೆ
 # ಅಂಕೆ1 = 8
 # ಅಂಕೆ2 = 12
 # ಫಲಿತಾಂಶ = ಅಂಕೆ1 * ಅಂಕೆ2
