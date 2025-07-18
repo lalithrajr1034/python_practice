@@ -9,8 +9,5 @@
 
 """Concepts That Come Under Encapsulation"""
 #1.Acess Modifiers
-#2.Data Hiding
-#3.Getter and Setter Methods
-#4.Building of Data and Methods
-#5.Validation Logic Inside Methods 
-#6.Restrictin from Direct Access
+#2.Getter and Setter Methods
+

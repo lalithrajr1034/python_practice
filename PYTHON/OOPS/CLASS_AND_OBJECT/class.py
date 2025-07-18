@@ -10,8 +10,8 @@
 #NOTE :- class name should be in pascal case = ThisIsPascalCase
 #NOTE :- Function(or Method) should be in snake case = this_is_snake_case
 
-#instance variable:it is a type of vatiable in which different value for different object
-
+#instance variable : it is a type of vatiable in which different value for different object
+#data binding : combining the data(variable) and behavious(method) in a class
 class lalith:
     a="allalal"    
     def hi():
