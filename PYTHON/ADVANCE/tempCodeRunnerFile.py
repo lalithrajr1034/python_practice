@@ -1,15 +1,19 @@
-def sanity_check(data_type):
-    def outer_wrapper(function):
-        def inner_wrapper(*args):
-            if type(*args)==data_type:
-                print("data type matched")
+def tablet(data_type):
+    def decorator(fun):
+        def wrapper(*args):
+            if type(args[0]) == data_type:
+                print("this is correct data type ")    
+                print("************************")
+                fun(*args)
+                print("*************************")                
             else:
-                raise TypeError("data type not matched")
-        return inner_wrapper
-    return outer_wrapper
+                raise TypeError (" data type is not correct ")      
 
-@sanity_check
-def v(m):
-    print(m**2)
+        return wrapper
+    return decorator
 
-v(6) 
+def functions(a):
+    print(a**2)
+    
+functions = tablet(int)(functions)        
+functions(5)
