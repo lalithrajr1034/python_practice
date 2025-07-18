@@ -44,9 +44,6 @@ def fact():
 print(fact())
 
 
-
-
-
 def factorial(n):
     fact = 1
     while n > 1:
@@ -56,3 +53,15 @@ def factorial(n):
 
 n = int(input())
 print(factorial(n))
+
+
+#------------------------------------------------------------------------
+# Advanced Topics
+
+def advanced(data):
+    print(data)
+    def wrapper(val):
+        print(f' this is the advanced topic {val}')
+    return wrapper
+
+advanced("hi lalith")("my name is lalith")
