@@ -86,7 +86,7 @@ def tablet(data_type):
     return decorator
 
 def functions(a):
-    print(a**2)
+    print(a*2)
     
-functions = tablet(int)(functions)        
-functions(5)
+functions = tablet(str)(functions)     #here we can change a type of a data with respect to pareameters   
+functions("lalith ")

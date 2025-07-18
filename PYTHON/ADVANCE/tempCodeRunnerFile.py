@@ -13,7 +13,7 @@ def tablet(data_type):
     return decorator
 
 def functions(a):
-    print(a**2)
+    print(a*2)
     
-functions = tablet(int)(functions)        
-functions(5)
+functions = tablet(str)(functions)        
+functions("lalith ")
