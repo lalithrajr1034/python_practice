@@ -11,15 +11,15 @@
 
 #ex:
 #this is a Global space 
-def EnclosedNamespace_2():
-    print("this is a EnclosedNamespace_2")
-    def EnclosedNamespace_1():
-        print("this is a non local or EnclosedNmaespace_1")
+def GlobalNamespace():
+    print("this is a GlobalNamespace")
+    def EnclosedNamespace():
+        print("this is a non local or EnclosedNmaespace")
         def LocalNamespace():
             print("this is a localNamespace")        
         LocalNamespace()
-    EnclosedNamespace_1()    
-EnclosedNamespace_2()
+    EnclosedNamespace()    
+GlobalNamespace()
 #--------------------------------------------
 
 #SCOPE

@@ -1,19 +1,13 @@
-def tablet(data_type):
-    def decorator(fun):
-        def wrapper(*args):
-            if type(args[0]) == data_type:
-                print("this is correct data type ")    
-                print("************************")
-                fun(*args)
-                print("*************************")                
-            else:
-                raise TypeError (" data type is not correct ")      
+def decorator(fn):
+    def wrapper(*args):
+        print("**********")
+        fn(*args)
+        print("**********")
+    return wrapper
 
-        return wrapper
-    return decorator
 
-def functions(a):
-    print(a*2)
-    
-functions = tablet(str)(functions)        
-functions("lalith ")
+def divide(numerator: int, denominator: int):
+    answer = numerator/denominator
+    return answer
+val = decorator(divide)
+print(val(2,5))
