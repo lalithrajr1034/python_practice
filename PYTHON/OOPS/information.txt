@@ -1,2 +1,5 @@
 Instance variable: Instance variabele are the variable that are defined inside a class but the value are different for different object,
 Then we can acess this outside the method using "self"
+
+Class variable/ Static variabele: Class variable are the variable that are defined inside a class but values are same 
+  - by using a Class or Static variabele we can make a Static method 

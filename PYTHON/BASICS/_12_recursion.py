@@ -22,8 +22,6 @@ num=int(input("Enter the factotial"))
 print(f"Factorial of {num} is {factorial(num)}")#f-string
 
 
-
-
 #recurtion to print list
 def fact(lis,ind=0):
     if ind==len(lis):
