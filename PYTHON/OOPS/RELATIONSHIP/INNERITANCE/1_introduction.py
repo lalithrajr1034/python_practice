@@ -5,7 +5,7 @@
 # se can acess ( constructor, metod, data)
 
 """ Types of inneritance """
-# 1.Single inneritance
-# 2.Multiple inneritance
-# 3.Multi lavel inneritance
-# 4.Hierarchical inneritance
+# 1.Single inneritance 
+# 2.Multiple inneritance 
+# 3.Multi lavel inneritance 
+# 4.Hierarchical inneritance 
