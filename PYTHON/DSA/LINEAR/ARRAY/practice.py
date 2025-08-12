@@ -1,5 +1,5 @@
 #Time complacity:
-    #It is calculating a mathematical expresion for increse in time taken to execute a program w r s to incresing in no of input
+    #It is calculating a mathematical expresion for increse in time taken to execute a program wrto incresing in no of input
 
 
 

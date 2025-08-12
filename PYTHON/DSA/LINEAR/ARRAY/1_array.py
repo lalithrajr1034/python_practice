@@ -1,4 +1,11 @@
-# An array is the linear data structure which helps to store a similar type of data
+# An array is the linear data structure which helps to store a similar type of data contagiously 
+
+
+#Dis advantage
+""" 1. Memory wastage (fixed size)   --> 
+    2. Homogonous (lack of flexible) --> referencial array 
+    3. Shifting (after deleting element we have to shift all element)
+"""
 
 
 import numpy as np
@@ -8,7 +15,9 @@ a = np.array(["li", "age", "name"])
 print(a)
 
 #--------------------------------------
+
 #Referential array:
+# This will store the adress of a array in a array //// compare to a array speed is low , and extra menory is used //// Python list is a referencial array
 import numpy as np 
 li1=[3,5]
 li2=["lal","lalith"]
@@ -22,14 +31,3 @@ print(a)
 #--------------------------------------
 #Dynamic array
 #A dynamic array allows to Store elements in a contiguous block of memory But also increase and decrease in size automatically when needed
-
-def listt():
-    l=[]
-    size=10
-    for index in range(0,size):
-        l[index]
-        if index==size-2:
-            size =size+100
-
-    print(size)
-listt()    
