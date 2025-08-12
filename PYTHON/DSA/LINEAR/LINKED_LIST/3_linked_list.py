@@ -41,5 +41,5 @@ obj1 = LinkedList()
 # obj1.add_head(52)        
 obj1.append(567)      
 print(len(obj1))
-
+print(obj1.traverse())
 

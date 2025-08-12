@@ -15,15 +15,3 @@ print(id(obj11)) #1692024401808 we have to add the adress in the node   obj1--> 
 
 #................................................
 
-class Linked:
-    def __init__(self, value):
-        self.value = value
-        self.address = None
-obj1 = Linked(4)  
-obj2 = Linked(32)
-obj3 = Linked(7)
-
-obj1.next = obj2
-obj2.next = obj3 
-print(obj1.next)  
-
