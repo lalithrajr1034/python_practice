@@ -28,17 +28,27 @@ class LinkedList:
         last_add = Node(value)     
         if self.head == None:
             self.head = last_add
-        val = self.head
-        while val.next != None:
-            val = val.next  
-        val.next = last_add
+        else:
+            val = self.head
+            while val.next != None:
+                val = val.next  
+            val.next = last_add
         self.count += 1
-         
+    def add_between(self, where, value):
+        search = self.head
+        while search.value != where:
+            search = search.next
+        if search.value == where:
+            new_node = None(value)
+            new_node.next = search.next    
+            search.next = new_node  
+            self.count+=1   
         
 obj1 = LinkedList()
-# obj1.add_head(5)  
-# obj1.add_head(52)        
-obj1.append(567)      
+obj1.add_head(5)  
+obj1.add_head(52)        
+obj1.append(567)   
+obj1.add_between(52, 100)   
 print(len(obj1))
 print(obj1.traverse())
 

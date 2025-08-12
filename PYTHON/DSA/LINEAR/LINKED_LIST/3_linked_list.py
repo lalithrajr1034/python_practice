@@ -1,3 +1,5 @@
+#  https://chatgpt.com/share/689bd021-b39c-8012-bf29-3773352802b8
+
 class Node:
     def __init__(self, value):
         self.value = value
@@ -34,12 +36,21 @@ class LinkedList:
                 val = val.next  
             val.next = last_add
         self.count += 1
-         
+    def add_between(self, where, value):
+        search = self.head
+        while search.value != where:
+            search = search.next
+        if search.value == where:
+            new_node = Node(value)
+            new_node.next = search.next    
+            search.next = new_node  
+            self.count+=1   
         
 obj1 = LinkedList()
-# obj1.add_head(5)  
-# obj1.add_head(52)        
-obj1.append(567)      
+obj1.add_head(5)  
+obj1.add_head(52)        
+obj1.append(567)   
+obj1.add_between(52, 100)   
 print(len(obj1))
-print(obj1.traverse())
+obj1.traverse()
 

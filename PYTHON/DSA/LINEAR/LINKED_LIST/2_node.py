@@ -1,5 +1,5 @@
 # To work with a linked list first we have to learn how to make a node
-
+# https://chatgpt.com/share/689bd021-b39c-8012-bf29-3773352802b8
 
 # Node is created value is inserted and adress of every node is None 
 class Node:
