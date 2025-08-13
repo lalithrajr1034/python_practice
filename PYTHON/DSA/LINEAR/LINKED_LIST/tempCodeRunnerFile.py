@@ -1,3 +1,4 @@
+
 class Node:
     def __init__(self, value):
         self.value = value
@@ -39,16 +40,33 @@ class LinkedList:
         while search.value != where:
             search = search.next
         if search.value == where:
-            new_node = None(value)
+            new_node = Node(value)
             new_node.next = search.next    
             search.next = new_node  
             self.count+=1   
-        
+        else:
+            print("Value not found")
+    def clear(self):
+        self.head = None
+        self.count = 0
+    def def_head(self):
+        self.head = self.head.next
+        self.count += -1
+    def pop(self):
+        count = self.head
+        while count.next.next == None:
+            count.next = None         
+        self.count += -1
+        if count.next == None:
+            print("Only head is present")
+        if self.head == None:
+            print("linked list is empty")    
+            
 obj1 = LinkedList()
 obj1.add_head(5)  
 obj1.add_head(52)        
 obj1.append(567)   
 obj1.add_between(52, 100)   
 print(len(obj1))
-print(obj1.traverse())
-
+obj1.traverse()
+obj1.clear()
