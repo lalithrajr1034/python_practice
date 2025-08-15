@@ -50,21 +50,24 @@ class LinkedList:
         self.head = None
         self.count = 0
     def def_head(self):
+        if self.head == None:
+            return "Empty linked list"
         self.head = self.head.next
         self.count += -1
-        if self.head == None:
-            print("liked list is empty")
+
     
     def pop(self):
         count = self.head
+        if self.head == None:
+            print("linked list is empty")
+        if count.next == None:
+            print("Only head is present")
         while count.next.next != None:
             count= count.next
         count.next = None            
         self.count += -1
-        # if count.next == None:
-        #     print("Only head is present")
-        # if self.head == None:
-        #     print("linked list is empty")    
+       
+    
             
 obj1 = LinkedList()
 obj1.add_head(5)  
