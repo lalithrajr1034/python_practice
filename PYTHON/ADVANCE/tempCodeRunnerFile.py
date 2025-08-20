@@ -1,13 +1,14 @@
-def decorator(fn):
-    def wrapper(*args):
-        print("**********")
-        fn(*args)
-        print("**********")
-    return wrapper
+class Person:
+    count = 0
 
+    def __init__(self, name):
+        self.name = name
+        Person.count += 1  # increment class-level count
 
-def divide(numerator: int, denominator: int):
-    answer = numerator/denominator
-    return answer
-val = decorator(divide)
-print(val(2,5))
+    @classmethod
+    def total_persons(cls):
+        return cls.count
+p1 = Person("Lalith")
+p2 = Person("Raj")
+
+print(Person.total_persons())  # 2

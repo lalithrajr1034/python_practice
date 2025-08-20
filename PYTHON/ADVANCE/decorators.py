@@ -1,5 +1,9 @@
 #Decorators is the function which receive a funcion as input and add some functionality(decoration's) and return a function
 
+#there are 2 tyes of decorator 
+# built in decoraror 
+# user defined decorator (3)
+
 def decorator(a):
     def wrapper():
         print("**********")
@@ -66,8 +70,17 @@ def sec(n):
     print("my name is lalith raj",n)
 sec("hi lalith")
 
-
-
+#-----------------------------------------------------------
+# User define decorator's 
+""" 
+@staticmethod
+@classmethod
+@property
+"""
+    #staticmethod
+""" This decorator is used inside a class this helps to use a direct access data from a object 
+it will help to save the time go through class and instance variable """
+    
 
 #-----------------------------------------------------------
 # Advanced Topic

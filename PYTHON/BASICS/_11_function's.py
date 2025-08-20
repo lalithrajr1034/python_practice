@@ -65,3 +65,8 @@ def advanced(data):
     return wrapper
 
 advanced("hi lalith")("my name is lalith")
+
+#------------------------------------------------------------------------
+# Advanced Topics
+
+# lambda function's
