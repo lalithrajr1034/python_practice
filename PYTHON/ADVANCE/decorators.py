@@ -77,11 +77,18 @@ sec("hi lalith")
 @classmethod
 @property
 """
-    #staticmethod
+    #static method
 """ This decorator is used inside a class this helps to use a direct access data from a object 
 it will help to save the time go through class and instance variable """
+class Decorators:
+    @staticmethod
+    def subt(a: int,b:int):
+        return a - b
+obj = Decorators()
+print(obj.subt(3,5))
     
-
+   #class method 
+ 
 #-----------------------------------------------------------
 # Advanced Topic
 def tablet(data_type):
