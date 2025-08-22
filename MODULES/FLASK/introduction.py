@@ -27,5 +27,4 @@ def login_submit():
 def dashboard():
     return "You are logged in!"
 
-if __name__ == "__main__":
-    app.run(debug=True)
+app.run(debug=True)
