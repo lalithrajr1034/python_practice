@@ -1,11 +1,14 @@
 class Solution():
     @staticmethod
-    def twoSum(nums, target):
-        for i in range(len(nums)):
-            for j in range(i+1,len(nums)):
-                if nums[i]+nums[j] == target:
-                    return [nums[i],nums[j]]
-                
-li = [3,2,4]
-a = Solution()
-print(a.twoSum(li, 6))
+    def findMedianSortedArrays(nums1, nums2):
+        val = sorted(nums1+nums2)
+        a = len(val)
+        odd = a//2
+        if a%2 == 0:
+            return (val[odd-1]+val[odd])/2
+        else:
+            return val[odd]      
+
+a = Solution
+print(a.findMedianSortedArrays([1,2],[3,4]))
+        
