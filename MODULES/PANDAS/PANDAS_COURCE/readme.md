@@ -1,106 +1,104 @@
 Pandas Functions (100+)
+<br>📌 Data Creation
+<br>pd.Series() – Create a Series object.
+<br>pd.DataFrame() – Create a DataFrame object.
+<br>pd.read_csv() – Load data from a CSV file.
+<br>pd.read_excel() – Load data from an Excel file.
+<br>pd.read_sql() – Load data from SQL query or database.
+<br>pd.read_json() – Load data from a JSON file.
+<br>pd.read_html() – Parse tables from HTML.
+<br>pd.read_clipboard() – Load data from clipboard.
+<br>pd.read_parquet() – Load data from Parquet file.
+<br>pd.read_orc() – Load data from ORC file.
+<br>pd.read_feather() – Load data from Feather file.
+<br>📌 Data Inspection
+<br>.head() – Show first rows.
+<br>.tail() – Show last rows.
+<br>.shape – Get dimensions (rows, columns).
+<br>.info() – Show summary info.
+<br>.describe() – Get statistical summary.
+<br>.dtypes – Data types of each column.
+<br>.index – Show index info.
+<br>.columns – List all column names.
+<br>.memory_usage() – Memory usage of DataFrame.
+<br>.sample() – Random sample of rows.
 
-📌 Data Creation
-pd.Series() – Create a Series object.
-pd.DataFrame() – Create a DataFrame object.
-pd.read_csv() – Load data from a CSV file.
-pd.read_excel() – Load data from an Excel file.
-pd.read_sql() – Load data from SQL query or database.
-pd.read_json() – Load data from a JSON file.
-pd.read_html() – Parse tables from HTML.
-pd.read_clipboard() – Load data from clipboard.
-pd.read_parquet() – Load data from Parquet file.
-pd.read_orc() – Load data from ORC file.
-pd.read_feather() – Load data from Feather file.
+<br>📌 Selection & Indexing
+<br>.loc[] – Select rows/cols by label.
+<br>.iloc[] – Select rows/cols by position.
+<br>.at[] – Fast access by label.
+<br>.iat[] – Fast access by integer index.
+<br>.xs() – Cross-section selection.
+<br>.get() – Retrieve column with default.
+<br>.set_index() – Set column as index.
+<br>.reset_index() – Reset index.
+<br>.sort_index() – Sort by index.
+<br>.reindex() – Conform DataFrame to new index.
 
-📌 Data Inspection
-.head() – Show first rows.
-.tail() – Show last rows.
-.shape – Get dimensions (rows, columns).
-.info() – Show summary info.
-.describe() – Get statistical summary.
-.dtypes – Data types of each column.
-.index – Show index info.
-.columns – List all column names.
-.memory_usage() – Memory usage of DataFrame.
-.sample() – Random sample of rows.
+<br>📌 Data Cleaning
+<br>.drop() – Drop rows/columns.
+<br>.dropna() – Drop missing values.
+<br>.fillna() – Fill missing values.
+<br>.isna() – Detect missing values.
+<br>.notna() – Detect non-missing values.
+<br>.replace() – Replace values.
+<br>.astype() – Change data type.
+<br>.rename() – Rename labels.
+<br>.duplicated() – Detect duplicates.
+<br>.drop_duplicates() – Remove duplicates.
 
-📌 Selection & Indexing
-.loc[] – Select rows/cols by label.
-.iloc[] – Select rows/cols by position.
-.at[] – Fast access by label.
-.iat[] – Fast access by integer index.
-.xs() – Cross-section selection.
-.get() – Retrieve column with default.
-.set_index() – Set column as index.
-.reset_index() – Reset index.
-.sort_index() – Sort by index.
-.reindex() – Conform DataFrame to new index.
+<br>📌 Data Transformation
+<br>.apply() – Apply function along axis.
+<br>.applymap() – Apply function elementwise.
+<br>.map() – Map values in Series.
+<br>.transform() – Transform values per group.
+<br>.pipe() – Apply function in method chain.
+<br>.eval() – Evaluate string expressions.
+<br>.query() – Query using expressions.
 
-📌 Data Cleaning
-.drop() – Drop rows/columns.
-.dropna() – Drop missing values.
-.fillna() – Fill missing values.
-.isna() – Detect missing values.
-.notna() – Detect non-missing values.
-.replace() – Replace values.
-.astype() – Change data type.
-.rename() – Rename labels.
-.duplicated() – Detect duplicates.
-.drop_duplicates() – Remove duplicates.
+<br>📌 Aggregations & Statistics
+<br>.sum() – Sum values.
+<br>.mean() – Mean values.
+<br>.median() – Median values.
+<br>.mode() – Mode values.
+<br>.min() – Minimum values.
+<br>.max() – Maximum values.
+<br>.std() – Standard deviation.
+<br>.var() – Variance.
+<br>.count() – Count non-NA.
+<br>.corr() – Correlation.
+<br>.cov() – Covariance.
+<br>.rank() – Ranking values.
 
-📌 Data Transformation
-.apply() – Apply function along axis.
-.applymap() – Apply function elementwise.
-.map() – Map values in Series.
-.transform() – Transform values per group.
-.pipe() – Apply function in method chain.
-.eval() – Evaluate string expressions.
-.query() – Query using expressions.
+<br>📌 Grouping & Combining
+<br>.groupby() – Group data.
+<br>.pivot_table() – Create pivot tables.
+<br>.pivot() – Reshape data.
+<br>.melt() – Unpivot data.
+<br>.crosstab() – Cross-tabulation.
+<br>.merge() – Merge DataFrames.
+<br>.join() – Join DataFrames.
+<br>.concat() – Concatenate DataFrames.
+<br>.combine_first() – Fill NA with another DataFrame.
 
-📌 Aggregations & Statistics
-.sum() – Sum values.
-.mean() – Mean values.
-.median() – Median values.
-.mode() – Mode values.
-.min() – Minimum values.
-.max() – Maximum values.
-.std() – Standard deviation.
-.var() – Variance.
-.count() – Count non-NA.
-.corr() – Correlation.
-.cov() – Covariance.
-.rank() – Ranking values.
+<br>📌 Time Series
+<br>.to_datetime() – Convert to datetime.
+<br>.dt accessor – Access datetime properties.
+<br>.resample() – Resample time series.
+<br>.asfreq() – Convert to given frequency.
+<br>.shift() – Shift values.
+<br>.tshift() – Shift index.
+<br>.rolling() – Rolling window calculations.
+<br>.expanding() – Expanding window calculations.
+<br>.ewm() – Exponentially weighted calculations.
 
-📌 Grouping & Combining
-.groupby() – Group data.
-.pivot_table() – Create pivot tables.
-.pivot() – Reshape data.
-.melt() – Unpivot data.
-.crosstab() – Cross-tabulation.
-.merge() – Merge DataFrames.
-.join() – Join DataFrames.
-.concat() – Concatenate DataFrames.
-.combine_first() – Fill NA with another DataFrame.
-
-📌 Time Series
-.to_datetime() – Convert to datetime.
-.dt accessor – Access datetime properties.
-.resample() – Resample time series.
-.asfreq() – Convert to given frequency.
-.shift() – Shift values.
-.tshift() – Shift index.
-.rolling() – Rolling window calculations.
-.expanding() – Expanding window calculations.
-.ewm() – Exponentially weighted calculations.
-
-📌 Input/Output
-.to_csv() – Export to CSV.
-.to_excel() – Export to Excel.
-.to_sql() – Export to SQL database.
-.to_json() – Export to JSON.
-.to_html() – Export to HTML.
-.to_parquet() – Export to Parquet.
-.to_feather() – Export to Feather.
-.to_clipboard() – Copy to clipboard.
-.to_markdown() – Export to Markdown.
+<br>📌 Input/Output
+<br>.to_csv() – Export to CSV.
+<br>.to_excel() – Export to Excel.
+<br>.to_sql() – Export to SQL database.
+<br>.to_json() – Export to JSON.
+<br>.to_html() – Export to HTML.
+<br>.to_parquet() – Export to Parquet.
+<br>.to_feather() – Export to Feather.
+<br>.to_clipboard() – Copy to clipboard.
+<br>.to_markdown() – Export to Markdown.
