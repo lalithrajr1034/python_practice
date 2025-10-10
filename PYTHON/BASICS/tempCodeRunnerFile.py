@@ -1,3 +1,2 @@
-a= "hi lalith raj"
-b = a.split()
-print(len(b[-1]))
+for i in range(2,12,2):
+    print(i)
