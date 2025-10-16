@@ -136,8 +136,3 @@ a=3
 b=6
 c="{}/{}".format(a,b)
 print(c)
-
-
-str="lalit-raj-r"
-fname,mname,lname=str.split("-")
-print(mname, lname)
