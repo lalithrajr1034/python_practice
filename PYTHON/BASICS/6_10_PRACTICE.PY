@@ -137,3 +137,7 @@ d=pow(a,b)
 print(d)
 c=pow(a,b,e)
 print(c)
+
+
+a = 'my name is lalith'
+print(a.split(" "))
