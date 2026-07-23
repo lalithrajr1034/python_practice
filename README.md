@@ -1,1 +1,1 @@
-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
+https://student.dheecodinglab.com/auth/campus/student/public/signin
