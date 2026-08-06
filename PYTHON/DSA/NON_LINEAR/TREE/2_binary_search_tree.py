@@ -2,6 +2,6 @@
    #it is a type of a Tree in  which it contain lower value's on left side and greater value is in right side
 
 
-# NOTE: binary search tree dosenot suppert duplicate value
+# NOTE: binary search tree dosenot support duplicate value
 
 
